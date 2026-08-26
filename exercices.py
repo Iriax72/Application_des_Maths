@@ -1,6 +1,6 @@
 # 0.1) ================
-print(4.2/2)
-# 2.1
+print(4,2/2)
+# 4, 1
 
 # 0.2) ================
 a = 23
@@ -17,17 +17,17 @@ print(b + a)
 28
 22
 25
-25
-hello23
+27
+hello25
 """
 
 # 0.3) ================
 print("L'intelligence est la capacité de résoudre des problèmes nouveaux."[2:])
 print("L'intelligence est la capacité de résoudre des problèmes nouveaux."[-2:])
 print("L'intelligence est la capacité de résoudre des problèmes nouveaux."[::-2])
-# 'intelligence est la capacité de résoudre des problèmes nouveaux.'
-# 'x.'
-# 'Litliec s acpct d rsuredspolmsnueu.'
+# intelligence est la capacité de résoudre des problèmes nouveaux.
+# x.
+# .ueunsmlopsdedoé déiaa lteenglen
 
 # 0.4) ================
 for k in range(3):
@@ -169,7 +169,7 @@ for n in range(10**6):
 # 0.9) ==================
 for n in range(2026):
     if n**2 > 2026:
-        print(2)
+        print(n)
         break
 
 # 0.10) ====================
@@ -182,14 +182,14 @@ print(liste)
 # b)
 for carre in liste:
     if carre >= 2026:
-        print(carre ** 0.5)
+        print(int(carre ** 0.5))
         break
 
 # 0.11) =======================
 def occurence(chiffre, nombre):
     occ = 0
-    chiffre = string(chiffre)
-    nombre = string(nombre)
+    chiffre = str(chiffre)
+    nombre = str(nombre)
     for c in nombre:
         if chiffre == c:
             occ += 1
@@ -207,12 +207,13 @@ Résultats attendus:
 """
 
 # 0.12) ==================
-x = int(input('Entrez un nombre'))
 def factorielle(x):
     fac = 1
     for i in range(1, x+1):
         fac *= i
     print(fac)
+x = int(input('Entrez un nombre'))
+print(factorielle(x))
 
 # 0.13) ==================
 for i in range(40):
@@ -223,7 +224,7 @@ def somme(n):
     ret = 0
     for i in range(1, n+1):
         ret += i
-    return 
+    return ret
     
 def autreSomme(n):
     return (n + 1) * n/2
